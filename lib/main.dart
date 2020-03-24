@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'demo/ListView_Demo.dart';
 import 'demo/Drawer_Demo.dart';
 import 'demo/BottomNavigationBar_Demo.dart';
+import 'demo/NavigatorDemo.dart';
 
 void main() => runApp(App());
 
@@ -11,7 +12,7 @@ class App extends StatelessWidget{
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Hemo(),
+      home: NavigatorDemo(),
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
