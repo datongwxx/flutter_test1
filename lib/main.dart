@@ -12,7 +12,12 @@ class App extends StatelessWidget{
     // TODO: implement build
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: NavigatorDemo(),
+      // home: NavigatorDemo(),
+      initialRoute: '/',
+      routes: {
+        '/' : (context) => ListViewDemo(),
+        '/about' : (context) => Page(title : 'About')
+      },
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
