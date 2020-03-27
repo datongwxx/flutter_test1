@@ -26,9 +26,9 @@ class PostShow extends StatelessWidget{
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-                Text('${post.title}', style: Theme.of(context).textTheme.headline1),
-                Text('${post.author}', style: Theme.of(context).textTheme.headline2),
-                Text('${post.description}', style: Theme.of(context).textTheme.headline2),
+                Text('${post.title}', style: Theme.of(context).textTheme.headline5),
+                Text('${post.author}', style: Theme.of(context).textTheme.bodyText1),
+                Text('${post.description}', style: Theme.of(context).textTheme.bodyText2),
               ],
             ),
           )
