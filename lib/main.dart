@@ -3,6 +3,7 @@ import 'demo/ListView_Demo.dart';
 import 'demo/Drawer_Demo.dart';
 import 'demo/BottomNavigationBar_Demo.dart';
 import 'demo/NavigatorDemo.dart';
+import 'demo/Form_Demo.dart';
 
 void main() => runApp(App());
 
@@ -13,15 +14,17 @@ class App extends StatelessWidget{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       // home: NavigatorDemo(),
-      initialRoute: '/',
+      initialRoute: '/form',
       routes: {
         '/' : (context) => ListViewDemo(),
-        '/about' : (context) => Page(title : 'About')
+        '/about' : (context) => Page(title : 'About'),
+        '/form' : (context) => FormDemo(),
       },
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
         highlightColor: Color.fromRGBO(255, 255, 255, 0.5),
         splashColor: Colors.white70,
+        accentColor: Colors.blue,
       )
     );
   }
